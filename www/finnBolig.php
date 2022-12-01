@@ -34,7 +34,7 @@ echo "<h1>HVOR VIL DU FINNE BOLIG?</h1>";
 ?>
 <div id= "search">
   <input type="search">
-  <input type= "submit">
+  <button type= "submit" name=v"søk">
   </div>
 
     </body>
