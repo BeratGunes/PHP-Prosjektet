@@ -1,0 +1,40 @@
+            @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+            h1 {
+
+                position: relative;
+                top: -40px;
+                font-size: 50px;
+                color: #998c28;
+                left: 45%;
+                font-family: Arvo;
+                 }
+             td {
+                 padding: 10px;
+                 font-size: 23px;
+                 color: white;
+                 text-align: center;
+                 top: -80px;
+                 left: 80%;
+                 transform: translate(45%, -50%);
+                }
+                 body {
+                 background-color: #225E24; 
+                }
+                 #center {
+                 position: absolute;
+                 top: 50%;
+                 left: 45%;
+                 transform: translate(-50%, -50%);
+                 }
+                
+                 p{
+                    position: relative;
+                    color: #998c28;
+                    top: 650px;
+                    font-size: 25px;
+                    left: 40%;
+                    font-family: Arvo;
+
+                }
+                

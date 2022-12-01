@@ -2,7 +2,7 @@
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASS', '');
-    define('DB_NAME', 'IS-115');
+    define('DB_NAME', 'PHPProsjektet');
     $dsn = 'mysql:dbname=' . DB_NAME . ';host=' . DB_HOST; // Driver is set here
 
     try {
