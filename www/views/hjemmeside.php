@@ -8,7 +8,7 @@
 <?php
 include "header.php";
 require_once "../../includes/db.inc.php";
-// include "../main/session.php";
+include "../main/session.php";
 
 
 // if($_SESSION['LoggetInn'] == true) {
@@ -22,13 +22,19 @@ require_once "../../includes/db.inc.php";
 
 <h1>Velkommen, <?php echo $_SESSION['Fornavn'];?>!</h1><br>
 
-<input type="button" class="button_active" onclick="location.href='../main/finnBolig.php';" value="FINN BOLIG"/><br><br>
+<div class="knappish">
 
-<input type="button" class="button_active" onclick="location.href='omBolish.php';" value= "MIN BOLIG"/><br><br>
+<input type="button" class="btn" onclick="location.href='finnBolish.php';" value="FINN BOLIG"/>
 
-<input type="button" class="button_active" onclick="location.href='sendMeldish.php';" value= "SEND MELDING"/><br><br>
+<input type="button" class="btn" onclick="location.href='omBolish.php';" value= "MIN BOLIG"/><br><br>
 
-<input type="button" class="button_active" onclick="location.href='opprettAnonish.php';" value= "OPPRETT ANNONSE"/><br><br>
+<input type="button" class="btn" onclick="location.href='sendMeldish.php';" value= "SEND MELDING"/><br><br>
+
+<input type="button" class="btn" onclick="location.href='opprettAnonish.php';" value= "OPPRETT ANNONSE"/>
+
+<input type="button" class="btn" onclick="location.href='seAnnonish.php';" value= "SE ANNONSE"/>
+
+</div>
 
 
 

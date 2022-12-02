@@ -64,12 +64,40 @@ h1 {
   background-color: #04AA6D;
   color: white;
 }
+.knappish {
+            width: 100%;
+        }
 
+        .knappish img {
+            width: 100%;
+            height: auto;
+        }
+
+        .knappish .btn {
+
+
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+
+        .knappish .btn:hover {
+            background-color: #998C28;
+            color: white;
+
+        }
 </style>
 </head>
 <body>
-    <a href="../views/seMeldish.php"><img class="about_us1_images "src="img/chat.png"></img></a>
-    <a href="../main/minProfil.php"><img class="about_us1_images "src="img/minprofil.png"></img></a>
+    
+    <a href="seMeldish.php"><img class="about_us1_images "src="img/chat.png"></img></a>
+    <a href="minProfish.php"><img class="about_us1_images "src="img/minprofil.png"></img></a>
     <a href="../main/logout.php"><img class="about_us1_images "src="img/logut.png"></img></a>
     <a href="hjemmeside.php"><img class="about_us2_images "src="img/logo.png"></img></a>
     <br><br>

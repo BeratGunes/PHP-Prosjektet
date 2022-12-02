@@ -102,10 +102,10 @@ CREATE TABLE Rettigheter
 
 INSERT INTO Medlem(Fornavn,Etternavn,Brukernavn,Mobilnummer,Epost,Passord,Adresse,Postnummer)
 
-VALUES ('Berat','Gunes','beratg',96741021,'beratg12@hotmail.com','  ','Wolframveien 32C',4629),
-       ('Omer','Fener','omercik',19070709,'omerf19@hotmail.com','omerpassord','Moenshagen 2',1810),
-       ('Abdul Rahman','aposh','Kasim',19051905,'abdulrk12@hotmail.com','abdulpassord','Marnardalveien 12',8907),
-       ('Sena Eda','senaeda','Gundogar',12345678,'senaed@hotmail.com','senapassord','Kanziveien 31',1234);
+VALUES ('Berat','Gunes','beratg',96741021,'beratg12@hotmail.com','$2y$10$hbekrLQqqKeQ3KLpzdUiHeH938dd5C4oyJmJPyn3RxcU4qz3whHvm','Wolframveien 32C',4629),
+       ('Omer','Fener','omercik',19070709,'omerf19@hotmail.com','$2y$10$hbekrLQqqKeQ3KLpzdUiHeH938dd5C4oyJmJPyn3RxcU4qz3whHvm','Moenshagen 2',1810),
+       ('Abdul Rahman','Kasim','aposh',19051905,'abdulrk12@hotmail.com','$2y$10$hbekrLQqqKeQ3KLpzdUiHeH938dd5C4oyJmJPyn3RxcU4qz3whHvm','Marnardalveien 12',8907),
+       ('Sena Eda','Gundogar','senaeda',12345678,'senaed@hotmail.com','$2y$10$hbekrLQqqKeQ3KLpzdUiHeH938dd5C4oyJmJPyn3RxcU4qz3whHvm','Kanziveien 31',1234);
 
 
 INSERT INTO Annonse(Annonse_Navn, Annonse_Beskrivelse, Medlem_ID)

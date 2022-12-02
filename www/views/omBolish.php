@@ -7,7 +7,7 @@ include "../main/omBolig.php";
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Vis annonsen</h1>
+        <h1>OM BOLIG</h1>
             <table border='1'>
         <tr>
             <th>Bolig Navn</th>
