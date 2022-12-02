@@ -11,13 +11,13 @@
     <table border= '1'>
 
 <tr>
-<th>Brukernavn</th>
+<th>Sendt til</th>
 <th>Meldingen</th>
 </tr>
 
 <tr>
-<td><?php echo $melding["Brukernavn"]?>;</td>
-<td><?php echo $melding["Melding_Beskrivelse"]?>;</td>
+<td><?php echo $melding["Brukernavn"];?></td>
+<td><?php echo $melding["Melding_Beskrivelse"];?></td>
 </tr>
 
 </table>

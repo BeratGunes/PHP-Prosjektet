@@ -22,9 +22,7 @@ CREATE TABLE Annonse
     Annonse_ID              SMALLINT UNIQUE AUTO_INCREMENT,
     Annonse_Navn            VARCHAR(100)    NOT NULL,
     Annonse_Beskrivelse     VARCHAR(500)    NOT NULL,
-    Medlem_ID              SMALLINT         NOT NULL,
-    CONSTRAINT PRIMARY KEY (Annonse_ID),
-    CONSTRAINT FOREIGN KEY (Medlem_ID) REFERENCES Medlem(Medlem_ID) ON DELETE CASCADE
+    CONSTRAINT PRIMARY KEY (Annonse_ID)
 );
 
 
@@ -108,12 +106,12 @@ VALUES ('Berat','Gunes','beratg',96741021,'beratg12@hotmail.com','$2y$10$hbekrLQ
        ('Sena Eda','Gundogar','senaeda',12345678,'senaed@hotmail.com','$2y$10$hbekrLQqqKeQ3KLpzdUiHeH938dd5C4oyJmJPyn3RxcU4qz3whHvm','Kanziveien 31',1234);
 
 
-INSERT INTO Annonse(Annonse_Navn, Annonse_Beskrivelse, Medlem_ID)
+INSERT INTO Annonse(Annonse_Navn, Annonse_Beskrivelse)
 
-VALUES ('SLETTHEIAS HJERTE', 'DFGXCGVHJDKLWELDGFKHSDBVFGJKHSDJKFHSJKD',1),
-       ('Gøtdenverenbolig til salgs', 'Den har 4 rom men kan gjøres om til 5', 2),
-       ('Amcikbolig til salgs', 'Boligen er for studenter', 3),
-       ('Zencibolig til salgs', 'Boligen har en fabelaktig utsikt', 4);
+VALUES ('SLETTHEIAS HJERTE', 'DFGXCGVHJDKLWELDGFKHSDBVFGJKHSDJKFHSJKD'),
+       ('Gøtdenverenbolig til salgs', 'Den har 4 rom men kan gjøres om til 5'),
+       ('Amcikbolig til salgs', 'Boligen er for studenter'),
+       ('Zencibolig til salgs', 'Boligen har en fabelaktig utsikt');
 
 INSERT INTO Bolig(Bolig_Navn, Bolig_Adresse, Byen, Bydel, Annonse_ID)
 
@@ -129,7 +127,8 @@ VALUES('Lorem ipsum dolorsed do eiusmod tempor incididunt ut labore et dolore ma
       ('Det er laget mange variasjoner av den opprinnelige versjonen for å inkludere tegn som er lite eller ubrukt i latin.', 3),
       ('Siden betydningen av teksten er uforståelig for de fleste, egner den seg godt, fordi man har påvist at man blir påvirket av innholdet i teksten når man skal se på skriftsnitt eller design.', 4);
 
-COMMIT;
+
+
 
 
 

@@ -8,9 +8,10 @@
     <h1>Opprett annonse</h1>
 
     <?php
+    session_start();
  if(isset($_POST['Opprett'])) {
 
-    require_once "../include/db.inc.php";
+    require_once "../../includes/db.inc.php";
 
     $annonsenavn = $_POST ['Annonse_Navn'];
     $annonsebeskrivelse = $_POST ['Annonse_Beskrivelse'];
@@ -27,12 +28,13 @@
     try {
         $q->execute();
         header("location:../views/annonseLagtinn.php");
+        $_SESSION['lagtinn'] == true;
+
     } catch (PDOException $e) {
         echo $e->getMessage() . "<br>";
     }
 
 }
-
 
     ?>
 

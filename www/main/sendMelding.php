@@ -1,6 +1,7 @@
 <html>
     <body>
 <?php
+session_start();
     if(isset($_POST['send'])) {
 
         require_once "../../includes/db.inc.php";
@@ -9,11 +10,12 @@
         $sendtil = $_POST['Medlem_ID'];
 
 
-        $sql="INSERT INTO Meldinger
-        (Melding_Beskrivelse, Medlem_ID)
+        $sql="INSERT INTO Meldinger (Melding_Beskrivelse,Medlem_ID)
         VALUES
-        (:Melding_Beskrivelse, :Medlem_ID)
-        ";
+        (:Melding_Beskrivelse, :Medlem_ID)";
+
+       
+
         $spørring= $pdo->prepare($sql);
 
         $spørring->bindParam(':Melding_Beskrivelse', $meldingen, PDO::PARAM_STR);
@@ -23,10 +25,11 @@
 
         try {
             $spørring->execute();
-            echo "Meldingen er sendt";
+            echo $_SESSION['Fornavn']. " , Meldingen din er sendt. ";
         } catch (PDOException $e) {
             echo $e->getMessage() . "<br>";
         }
+        
     }
 
 ?>
