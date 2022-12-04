@@ -38,6 +38,10 @@ foreach ($Meldinger as $melding )
 
 
 
+<div class="knappish">
+<input type="button" class="btn" onclick="location.href='sendMeldish.php';" value= "SEND MELDING"/>
+    </div>
+    <br><br>
 
 
 

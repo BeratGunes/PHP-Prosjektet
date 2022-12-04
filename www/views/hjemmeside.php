@@ -32,13 +32,12 @@ include "../main/session.php";
 
 <input type="button" class="btn" onclick="location.href='opprettAnonish.php';" value= "OPPRETT ANNONSE"/>
 
-<input type="button" class="btn" onclick="location.href='seAnnonish.php';" value= "SE ANNONSE"/>
+<input type="button" class="btn" onclick="location.href='seAnnonish.php';" value= "SE ANNONSE"/><br><br>
+
+<input type="button" class="btn" onclick="location.href='seForespørsel.php';" value= "SE FORESPØRSLER"/>
+
+<input type="button" class="btn" onclick="location.href='sendForish.php';" value= "SEND FORESPØRSLER"/>
 
 </div>
-
-
-
-
-
 
 </html>

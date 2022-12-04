@@ -1,5 +1,7 @@
 <html>
     <body>
+
+
         <?php
         include "header.php";
         include "../main/seMeldinger.php";
@@ -8,6 +10,8 @@
         
 
         ?>
+
+
     <table border= '1'>
 
 <tr>
@@ -24,5 +28,7 @@
 <?php
         }
 ?>
+
+
     </body>
 </html>

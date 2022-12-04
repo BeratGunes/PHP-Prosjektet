@@ -7,20 +7,21 @@ include "../main/omBolig.php";
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>OM BOLIG</h1>
+        <h1>Min bolig</h1>
             <table border='1'>
         <tr>
             <th>Bolig Navn</th>
             <th>Bolig Adresse</th>
-            <th>Annonse Navn</th>
-            <th>Annonse Beskrivelse</th>
+            <th>Pris i mnd</th>
+            <th>Bydel</th>
         </tr>
 
         <tr>
             <td><?php echo $annonse['Bolig_Navn']; ?></td>
             <td><?php echo $annonse['Bolig_Adresse'];?></td>
-            <td><?php echo $annonse['Annonse_Navn'];?></td>
-            <td><?php echo $annonse['Annonse_Beskrivelse'];?></td>
+            <td><?php echo $annonse['Pris'];?></td>
+            <td><?php echo $annonse ['Bydel'];?></td>
+          
         </tr>
 
             </table>
