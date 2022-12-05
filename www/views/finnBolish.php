@@ -11,11 +11,13 @@ include "../main/finnBolig.php";
     <th>Bydel</th>
 </tr>
 
-<h1> Finn Bolig </h1>
+<h1> Finn Bolig </h1><br>
 <form action="#" method="post">
-  SØK <input type="text" name="search"><br>
-      <input type="submit" name="submit" value="Søk">
+ <h3>Søk etter bolig:</h3><left><input type="text" name="search"><br>
+     <input type="submit" name="submit" value="Søk">
+
 </form>
+
 <?php
 $rows = '';
 if (isset($_POST["submit"])) {
@@ -42,8 +44,8 @@ foreach($boliger as $r){
     echo "<td>".$r['Bolig_Navn']."</td>";
     echo "<td>".$r['Bydel']."</td>";
     echo "</tr>";
-}
-}
+    }
+  }
 }
 ?>
 </table>

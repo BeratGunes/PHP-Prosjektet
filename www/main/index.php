@@ -1,15 +1,28 @@
 <html>
+
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../views/loggInnUtseende.css"  type="text/css">
 
+        <!-- logo stilen for logg inn knappen -->
+       <style>
+            #logo{ 
+                display: block;
+                margin-left: auto;  
+                margin-right: auto;  
+            }
+        </style>
 
     </head>
             <title>Logg inn</title>
 
     <body>
+        <!-- logo sourcen kommer fra img-->
+        <img src="../views/img/logo.png" id="logo" height="200">
         
     <?php
+
+    //starter session 
         session_start();
     if(isset($_POST['logginn'])) {
         require_once "../../includes/db.inc.php";
@@ -33,7 +46,6 @@
     $passordhash = password_hash($_POST['Passord'], PASSWORD_DEFAULT); 
 
 
-
     if (password_verify($_POST['Passord'], $medlem->Passord)) {
 		/* Passordene matcher: videresender brukeren til innsiden av systemet */
         $_SESSION['ID'] = $medlem->Medlem_ID;
@@ -50,17 +62,17 @@
         exit();
 
 
-
 	} else {
 		echo "Brukernavn og/eller passord er ikke riktig";
 	}
 }
+
     ?>
     <form method= "post" action="<?php echo $_SERVER['PHP_SELF'];?>">
     <div id="center">
         <table>
             <tr>
-                <h1>Logg inn</h1>
+                <h1>Logg Inn</h1>
                     <td>Brukernavnet</td>
                     <td><input type="text" name="Brukernavn" placeholder = "Brukernavn"/></td>
                     <br>
@@ -71,7 +83,7 @@
                     <br>
                 </tr>   
             <tr>
-                <td><input type="submit" name="logginn" value ="Logg inn" /></td>
+                <td><input type="submit" name="logginn" value ="Logg inn"/></td>
             </tr>
                 </table>
             </div>

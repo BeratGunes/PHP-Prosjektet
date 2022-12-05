@@ -8,9 +8,10 @@
         <form method="post" action="">
             <h1>SEND MELDING</h1>
             <label for="medlem">Send til</label>
-            <input type="number" id="medlem" name="Medlem_ID" placeholder="Send til"><br>
+            <input type="number" id="medlem" name="Medlem_ID" placeholder="Send til"><br><br><br>
             <label for= "melding">Send melding</label><br>
-            <input type="text" id= "melding" name="Melding_Beskrivelse" placeholder="send melding"><br>
+            <textarea name="textarea" rows="5" cols="40"></textarea>
+            <br><br>
             <input type="submit"  name="send" value="Send">
         </form>
 
@@ -51,4 +52,3 @@ foreach ($medlemid as $medlemid){
        echo "</table>";
 }
 ?>
-       

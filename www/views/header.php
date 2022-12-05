@@ -8,6 +8,14 @@
     margin: auto;
     max-width: 1115px;
         }
+        h1 {
+    position: relative;
+    font-size: 100px;
+    top: 50px;
+    color: #998C28;
+    text-align: center;
+    font-family: Arial-BoldMT, Arial, Arial;
+}
         h2 {
     position: relative;
     font-size: 50px;
@@ -16,14 +24,35 @@
     font-family: Arial-BoldMT, Arial, Arial;
     margin-top: 50px;
 }
-h1 {
+h3 {
     position: relative;
-    font-size: 100px;
-    top: 50px;
-    color: #998C28;
+    font-size: 15px;
+    left: -150px;
+    top: 33px;
+    color: #f1f1f1;
     text-align: center;
     font-family: Arial-BoldMT, Arial, Arial;
+    }
 
+
+
+    h4 {
+    position: relative;
+    font-size: 15px;
+    right: 12   0px;
+    top: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    font-family: Arial-BoldMT, Arial, Arial;
+}
+    h5 {
+    position: relative;
+    font-size: 15px;
+    right: 12   0px;
+    top: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    font-family: Arial-BoldMT, Arial, Arial;
 }
     .about_us1_images
     {
@@ -91,6 +120,10 @@ h1 {
             background-color: #998C28;
             color: white;
 
+        }
+        .textarea {
+            width: 500px;
+            height: 250px;
         }
 </style>
 </head>
