@@ -5,19 +5,13 @@
     </head>
     <title><?php session_start(); echo $_SESSION['Fornavn'];?>s hjemmeside </title>
 </body>
+
 <?php
+
 include "header.php";
 require_once "../../includes/db.inc.php";
 include "../main/session.php";
 
-
-// if($_SESSION['LoggetInn'] == true) {
-//     header("location: index.php");
-//     exit;
-// }
-// else{
-//     header("location: hjemmeside.php");
-// }
 ?>
 
 <h1>Velkommen, <?php echo $_SESSION['Fornavn'];?>!</h1><br>
@@ -36,7 +30,12 @@ include "../main/session.php";
 
 <input type="button" class="btn" onclick="location.href='seForespørsel.php';" value= "SE FORESPØRSLER"/>
 
-<input type="button" class="btn" onclick="location.href='sendForish.php';" value= "SEND FORESPØRSLER"/>
+<input type="button" class="btn" onclick="location.href='sendForish.php';" value= "SEND FORESPØRSLER"/><br><br>
+
+<input type="button" class="btn" onclick="location.href='endreProfil.php';" value= "ENDRE PROFIL"/>
+
+<input type="button" class="btn" onclick="location.href='endreAnnonse.php';" value= "ENDRE ANNONSE"/>
+
 
 </div>
 

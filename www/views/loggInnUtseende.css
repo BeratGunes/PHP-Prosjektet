@@ -9,7 +9,7 @@
                 font-family: Arvo;
                  }
             td {
-                 padding: 10px;
+                 padding: 20px;
                  font-size: 23px;
                  color: white;
                  text-align: center;
@@ -21,7 +21,7 @@
             body {
                  background-color: #225E24; 
                 }
-                 #Sentrere {
+                 #center {
                  position: absolute;
                  top: 50%;
                  left: 45%;
@@ -35,10 +35,4 @@
                     left: 40%;
                     font-family: Arvo;
             }
-            #submit{
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                display:flex;
-                justify-content: center;
-            }
+           

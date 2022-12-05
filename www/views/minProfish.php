@@ -25,9 +25,11 @@ session_start();
         </tr>
 
             </table>
+            <div class="knappish">
 
-           
-     
+           <br><br> <input type="button" class="btn" onclick="location.href='endreProfil.php';" value="Endre profil"/>
+</div>
+
     </body>
 </html>
 

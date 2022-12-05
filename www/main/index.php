@@ -68,18 +68,18 @@
 }
 
     ?>
-    <form method= "post" action="<?php echo $_SERVER['PHP_SELF'];?>">
     <div id="center">
+    <form method= "post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <table>
             <tr>
                 <h1>Logg Inn</h1>
                     <td>Brukernavnet</td>
-                    <td><input type="text" name="Brukernavn" placeholder = "Brukernavn"/></td>
+                    <td><input type="text" name="Brukernavn" placeholder = "Brukernavn" pattern="^[a-zA-Z\s]+$" required/></td>
                     <br>
                 </tr>
             <tr>
                 <td>Passord</td>
-                    <td><input type="password" name="Passord" placeholder = "Passord" /></td>
+                    <td><input type="password" name="Passord" placeholder = "Passord" required/></td>
                     <br>
                 </tr>   
             <tr>

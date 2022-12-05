@@ -24,5 +24,11 @@ foreach ($annonser as $annonsish){
 ?>
        
     </table>
+    <div class="knappish">
+            <br><br> 
+           <input type="button" class="btn" onclick="location.href='slettAnnonse.php';" value="Slett en annonse"/>
+           <input type="button" class="btn" onclick="location.href='endreAnnonse.php';" value="Endre en annonse"/><br><br>
+
+</div>
     </body>
 </html>

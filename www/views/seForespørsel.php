@@ -7,6 +7,7 @@
         <?php
         include "header.php";
         require_once "../../includes/db.inc.php";
+
                     $sql= "SELECT F.Foresporsel_ID, A.Annonse_Navn, M.Fornavn
                     FROM ((Foresporsel F
                     INNER JOIN  Annonse A on F.Annonse_ID = A.Annonse_ID)
@@ -46,7 +47,14 @@
             echo "</table>";
 
          }
+
+         
              ?>
+
+            <div class="knappish">
+            <br><br> 
+           <input type="button" class="btn" onclick="location.href='slettForesporsel.php';" value="Slett en forespørsel"/>
+            </div>
     </body>
 </html>
 
