@@ -7,6 +7,7 @@
 
 
 <?php
+//kobler til databasen
 require_once "../../includes/db.inc.php";
 
 ?>

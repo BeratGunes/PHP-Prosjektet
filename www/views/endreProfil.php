@@ -52,7 +52,7 @@
 
         try {
             $q->execute();
-            echo "funker";
+            echo "Profilen er endret!";
         } catch (PDOException $e) {
             echo $e->getMessage() . "<br>";}
                 }

@@ -11,7 +11,7 @@
         <form method="post" action="">
             <h1>SEND FORESPØRSEL</h1>
             <label for= "Hvilken annonse">Hvilken annonse?</label><br>
-            <input type="number" id= "Hvilken annonse" name="Annonse_ID" placeholder="send melding"><br>
+            <input type="number" id= "Hvilken annonse" name="Annonse_ID" placeholder="send forespørsel"><br>
             <input type="submit"  name="send" value="Send">
         </form>
 

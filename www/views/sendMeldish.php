@@ -10,7 +10,7 @@
             <label for="medlem">Send til</label>
             <input type="number" id="medlem" name="Medlem_ID" placeholder="Send til"><br><br><br>
             <label for= "melding">Send melding</label><br>
-            <textarea name="textarea" rows="5" cols="40"></textarea>
+            <textarea name="Melding_Beskrivelse" rows="5" cols="40"></textarea>
             <br><br>
             <input type="submit"  name="send" value="Send">
         </form>

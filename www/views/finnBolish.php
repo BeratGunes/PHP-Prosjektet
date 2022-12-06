@@ -12,8 +12,9 @@ include "../main/finnBolig.php";
 </tr>
 
 <h1> Finn Bolig </h1><br>
+
 <form action="#" method="post">
- <h3>Søk etter bolig:</h3><left><input type="text" name="search"><br>
+ <input type="text" name="search"><br>
      <input type="submit" name="submit" value="Søk">
 
 </form>

@@ -10,7 +10,7 @@ session_start();
         $sendtil = $_POST['Medlem_ID'];
 
 
-        $sql="INSERT INTO Meldinger (Melding_Beskrivelse,Medlem_ID)
+        $sql="INSERT INTO Meldinger (Melding_Beskrivelse, Medlem_ID)
         VALUES
         (:Melding_Beskrivelse, :Medlem_ID)";
 
